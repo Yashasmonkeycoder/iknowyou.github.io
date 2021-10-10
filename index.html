@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Visit me once again</title>
+</head>
+<body>
+  <h1 id="counter">0</h1>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8">
+  if(localStorage.getItem("countsetterapktm") === null){
+  localStorage.setItem("countsetterapktm","0");
+  console.log(localStorage.countsetterapltm)
+  }
+  var ref = localStorage.countsetterapktm;
+  localStorage.countsetterapktm = parseInt(ref)+1;
+  document.getElementById("counter").innerHTML="you visited this: "+ref+" times";
+</script>
